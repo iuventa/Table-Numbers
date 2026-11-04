@@ -1,0 +1,102 @@
+
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f8f5f0">
+  <title>Wedding | Find Your Table</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Georgian:wght@400;500;600;700&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+
+  <main class="page">
+    <div class="decoration decoration-top">✦</div>
+    <div class="decoration decoration-bottom">✦</div>
+
+    <section class="invitation">
+
+      <div class="top-line"></div>
+
+      <div class="flower">❀</div>
+
+      <p class="eyebrow">მადლობა მობრძანებისთვის!</p>
+
+      <h1>
+        მოგესალმებით<br>
+        ჩვენს ქორწილში
+      </h1>
+
+      <div class="ornament">
+        <span></span>
+        <span class="ornament-icon">♡</span>
+        <span></span>
+      </div>
+
+      <p class="description">
+        ჩვენი განსაკუთრებული დღის ნაწილი ხართ.<br>
+        გაიგეთ, რომელ მაგიდასთან გელოდებით.
+      </p>
+
+      <div class="search-area">
+        <label for="guestSearch">მოძებნეთ თქვენი სახელი და გვარი</label>
+
+        <div class="input-wrapper">
+          <span class="search-icon">⌕</span>
+          <input
+            id="guestSearch"
+            type="text"
+            placeholder="მაგ. სალო / salo"
+            autocomplete="off"
+            autocapitalize="off"
+          >
+          <button id="clearBtn" type="button" aria-label="გასუფთავება">×</button>
+        </div>
+
+        <p class="hint">შეგიძლიათ მოძებნოთ ქართულად ან ინგლისურად</p>
+
+        <div id="results" class="results"></div>
+      </div>
+
+      <div id="selectedGuest" class="selected-guest hidden">
+        <div class="result-divider">✦</div>
+
+        <p class="result-label">მოგესალმებით</p>
+
+        <h2 id="guestName"></h2>
+
+        <p class="table-label">თქვენი მაგიდაა</p>
+
+        <div class="table-circle">
+          <span id="tableNumber"></span>
+        </div>
+        <div class="hall-map">
+  <img src="img/tables.png" alt="დარბაზის განლაგება" class="erahalltables">
+
+  <div id="tablePin" class="table-pin" hidden>
+    <span class="table-label">თქვენი მაგიდა</span>
+    <span class="table-dot">📍</span>
+  </div>
+</div>
+        <p class="happy-message">
+          გისურვებთ დაუვიწყარ საღამოს!
+        </p>
+      </div>
+
+      <p id="status" class="status" aria-live="polite"></p>
+
+      <footer>
+        სიყვარულით ♡ ვასო და სალომე
+      </footer>
+
+    </section>
+  </main>
+
+  <script src="js/scripts.js"></script>
+</body>
+</html>
